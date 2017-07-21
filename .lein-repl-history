@@ -1,4 +1,0 @@
-exit
-(use 'midje-repl)
-(use 'midje.repl)
-(autotest)
