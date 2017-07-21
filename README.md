@@ -1,6 +1,8 @@
-# marick-recursion
+# Marick-Recursion
 
-The project uses [Midje](https://github.com/marick/Midje/).
+Some puzzles involving recursion in Clojure.
+
+I am following exercises created by Brian Marick—they are available in his book [Functional Programming for the Object-Oriented Programmer](https://leanpub.com/fp-oo).
 
 ## How to run the tests
 
