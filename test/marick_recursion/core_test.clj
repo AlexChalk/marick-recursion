@@ -17,3 +17,9 @@
     (factorial2 4) => 24
     (factorial2 5) => 120
     (factorial2 6) => 720))
+
+(facts "about `recursive-add`" 
+  (fact "it adds a sequence of numbers"
+    (recursive-add [1 2 3 4] 0) => 10
+    (recursive-add [0 0 0 0] 0) => 0
+    (recursive-add [-1 -2 -3 -4] 0) => -10))

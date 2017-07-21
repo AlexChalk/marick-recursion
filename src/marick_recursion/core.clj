@@ -15,4 +15,11 @@
 
 (def factorial2
   (fn [arg]
-      (factorial2-1 arg 1)))
+    (factorial2-1 arg 1)))
+
+(def recursive-add
+  (fn [arg memo]
+    (if (empty? arg)
+      memo
+      (recur (rest arg)
+             (+ memo (first arg))))))
