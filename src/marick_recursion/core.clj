@@ -17,9 +17,10 @@
   (fn [arg]
     (factorial2-1 arg 1)))
 
-(def recursive-add
-  (fn [arg memo]
+(def recursive-operate
+  (fn [operation arg memo]
     (if (empty? arg)
       memo
-      (recur (rest arg)
-             (+ memo (first arg))))))
+      (recur operation 
+             (rest arg)
+             (operation memo (first arg))))))

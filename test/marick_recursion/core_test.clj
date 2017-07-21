@@ -18,8 +18,11 @@
     (factorial2 5) => 120
     (factorial2 6) => 720))
 
-(facts "about `recursive-add`" 
-  (fact "it adds a sequence of numbers"
-    (recursive-add [1 2 3 4] 0) => 10
-    (recursive-add [0 0 0 0] 0) => 0
-    (recursive-add [-1 -2 -3 -4] 0) => -10))
+(facts "about `recursive-operate`" 
+  (fact "it operates on a sequence of numbers"
+    (recursive-operate + [1 2 3 4] 0) => 10
+    (recursive-operate + [0 0 0 0] 0) => 0
+    (recursive-operate + [-1 -2 -3 -4] 0) => -10
+    (recursive-operate * [1 2 3 4] 1) => 24
+    (recursive-operate * [0 0 0 0] 1) => 0
+    (recursive-operate * [-1 -2 -3 -4] 1) => 24))
