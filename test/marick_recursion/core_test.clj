@@ -26,3 +26,7 @@
     (recursive-operate * [1 2 3 4] 1) => 24
     (recursive-operate * [0 0 0 0] 1) => 0
     (recursive-operate * [-1 -2 -3 -4] 1) => 24))
+
+(facts "about `zero-assocer`" 
+  (fact "with recursive-operate, it maps a list to keys with a value of 0"
+    (recursive-operate zero-assocer [:a :b :c] {}) => {:a 0 :b 0 :c 0}))

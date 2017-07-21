@@ -24,3 +24,7 @@
       (recur operation 
              (rest arg)
              (operation memo (first arg))))))
+
+(def zero-assocer
+  (fn [map key]
+    (assoc map key 0)))
