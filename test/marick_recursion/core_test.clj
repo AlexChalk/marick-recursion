@@ -30,3 +30,8 @@
 (facts "about `zero-assocer`" 
   (fact "with recursive-operate, it maps a list to keys with a value of 0"
     (recursive-operate zero-assocer [:a :b :c] {}) => {:a 0 :b 0 :c 0}))
+
+(facts "about `index-assocer`" 
+  (fact "with recursive-operate, it maps a list to keys with a value of their index in the list"
+    (recursive-operate index-assocer [:a :b :c] {}) => {:a 0 :b 1 :c 2}))
+

@@ -28,3 +28,7 @@
 (def zero-assocer
   (fn [map key]
     (assoc map key 0)))
+
+(def index-assocer
+  (fn [map key]
+    (assoc map key (count map))))
